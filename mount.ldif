@@ -1,0 +1,44 @@
+﻿dn: ou=automount,dc=uken,dc=local
+objectClass: organizationalUnit
+ou: automount
+
+dn: ou=auto.master,ou=automount,dc=uken,dc=local
+ou: auto.master
+objectClass: top
+objectClass: automountMap
+
+dn: cn=/homes,ou=auto.master,ou=automount,dc=uken,dc=local
+objectClass: top
+objectClass: automount
+automountInformation: ldap:ou=auto.home,ou=automount,dc=uken,dc=local		##参照するマップ
+cn: /homes									##マウントポイント
+
+dn: ou=auto.home,ou=automount,dc=uken,dc=local					##ホームディレクトリ
+ou: auto.home
+objectClass: top
+objectClass: automountMap
+
+dn: cn=*,ou=auto.home,ou=automount,dc=uken,dc=local
+objectClass: top
+objectClass: automount
+description: generic home directory
+automountInformation: -rw,fstype=nfs,soft,intr 192.168.0.0:/home/ldap/&	##マウントするもの
+cn: *
+
+dn: cn=/mnt/share,ou=auto.master,ou=automount,dc=uken,dc=local
+objectClass: top
+objectClass: automount
+automountInformation: ldap:ou=auto.share,ou=automount,dc=uken,dc=local		##参照するマップ
+cn: /mnt/share									##マウントポイント
+
+dn: ou=auto.share,ou=automount,dc=uken,dc=local					##グループでの共有ディレクトリ
+ou: auto.share
+objectClass: top
+objectClass: automountMap
+
+dn: cn=*,ou=auto.share,ou=automount,dc=uken,dc=local
+objectClass: top
+objectClass: automount
+description: share directory
+automountInformation: -rw,fstype=nfs,soft,intr 192.168.0.0:/home/share/&	##マウントするもの
+cn: *

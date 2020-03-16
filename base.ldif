@@ -1,0 +1,55 @@
+﻿dn: ou=people,dc=uken,dc=local			##ユーザーを格納する組織単位
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=uken,dc=local			##グループを格納する組織単位
+objectClass: organizationalUnit
+ou: groups
+
+dn: ou=teacher,ou=people,dc=uken,dc=local	##教員用ユーザー
+objectClass: organizationalUnit
+ou: teacher
+
+dn: ou=teacher,ou=groups,dc=uken,dc=local	##教員用グループ
+objectClass: organizationalUnit
+ou: teacher
+
+dn: ou=guest,ou=people,dc=uken,dc=local		##ゲストユーザー
+objectClass: organizationalUnit
+ou: guest
+
+dn: ou=guest,ou=groups,dc=uken,dc=local		##ゲストグループ
+objectClass: organizationalUnit
+ou: guest
+
+dn: ou=5th,ou=people,dc=uken,dc=local		##5期生用ユーザー
+objectClass: organizationalUnit
+ou: 5th
+
+dn: ou=5th,ou=groups,dc=uken,dc=local		##5期生用グループ
+objectClass: organizationalUnit
+ou: 5th
+
+dn: ou=7th,ou=people,dc=uken,dc=local		##7期生用ユーザー
+objectClass: organizationalUnit
+ou: 7th
+
+dn: ou=7th,ou=groups,dc=uken,dc=local		##7期生用グループ
+objectClass: organizationalUnit
+ou: 7th
+
+dn: ou=8th,ou=people,dc=uken,dc=local		##8期生用ユーザー
+objectClass: organizationalUnit
+ou: 8th
+
+dn: ou=8th,ou=groups,dc=uken,dc=local		##8期生用グループ
+objectClass: organizationalUnit
+ou: 8th
+
+dn: ou=9th,ou=people,dc=uken,dc=local		##9期生用ユーザー
+objectClass: organizationalUnit
+ou: 9th
+
+dn: ou=9th,ou=groups,dc=uken,dc=local		##9期生用グループ
+objectClass: organizationalUnit
+ou: 9th

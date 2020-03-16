@@ -1,0 +1,50 @@
+﻿dn: cn=teacher,ou=teacher,ou=groups,dc=uken,dc=local	##教員用共有グループ
+objectClass: posixGroup
+cn: teacher
+gidNumber: 10000
+memberUid:						##ここにユーザー名
+
+dn: cn=5th,ou=5th,ou=groups,dc=uken,dc=local		##5期生用共有グループ
+objectClass: posixGroup
+cn: 5th
+gidNumber: 10500
+memberUid:
+
+dn: cn=7th,ou=7th,ou=groups,dc=uken,dc=local		##7期生用共有グループ
+objectClass: posixGroup
+cn: 7th
+gidNumber: 10700
+memberUid:
+
+dn: cn=8th,ou=8th,ou=groups,dc=uken,dc=local		##8期生用共有グループ
+objectClass: posixGroup
+cn: 8th
+gidNumber: 10800
+memberUid:
+
+dn: cn=9th,ou=9th,ou=groups,dc=uken,dc=local		##9期生用共有グループ
+objectClass: posixGroup
+cn: 9th
+gidNumber: 10900
+memberUid:
+
+dn: cn=uken,ou=groups,dc=uken,dc=local			##部全体のグループ
+objectClass: posixGroup
+cn: uken
+gidNumber: 2000
+memberUid: uken01
+memberUid: uken02
+memberUid: uken03
+memberUid: uken04
+memberUid: uken05
+memberUid: uken06
+memberUid: uken07
+memberUid: uken08
+memberUid: uken09
+memberUid: uken10
+
+dn: cn=admin,ou=groups,dc=uken,dc=local			##root権限取得可能ユーザーのグループ
+objectClass: posixGroup
+cn: admin
+gidNumber: 2001
+memberUid:

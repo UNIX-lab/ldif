@@ -1,0 +1,171 @@
+﻿##ゲスト用アカウントを量産
+
+dn: uid=uken01,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken01			##ゲストアカウントなので
+sn: uken01			##この2つは同じ
+uidNumber: 10101		##01からスタート
+gidNumber: 10101
+userPassword:			##パスワード
+loginShell: /bin/bash		##ログインシェル
+homeDirectory: /homes/uken01	##ホームディレクトリ
+
+dn: cn=uken01,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10101		##01からスタート
+memberUid: uken01		##個人グループ
+
+dn: uid=uken02,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken02
+sn: uken02
+uidNumber: 10102
+gidNumber: 10102
+userPassword:
+loginShell: /bin/bash
+homeDirectory: /homes/uken02
+
+dn: cn=uken02,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10102
+memberUid: uken02
+
+dn: uid=uken03,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken03
+sn: uken03
+uidNumber: 10103
+gidNumber: 10103
+userPassword:
+loginShell: /bin/bash
+homeDirectory: /homes/uken03
+
+dn: cn=uken03,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10103
+memberUid: uken03
+
+dn: uid=uken04,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken04
+sn: uken04
+uidNumber: 10104
+gidNumber: 10104
+userPassword:
+loginShell: /bin/bash
+homeDirectory: /homes/uken04
+
+dn: cn=uken04,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10104
+memberUid: uken04
+
+dn: uid=uken05,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken05
+sn: uken05
+uidNumber: 10105
+gidNumber: 10105
+userPassword:
+loginShell: /bin/bash
+homeDirectory: /homes/uken05
+
+dn: cn=uken05,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10105
+memberUid: uken05
+
+dn: uid=uken06,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken06
+sn: uken06
+uidNumber: 10106
+gidNumber: 10106
+userPassword:
+loginShell: /bin/bash
+homeDirectory: /homes/uken06
+
+dn: cn=uken06,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10106
+memberUid: uken06
+
+dn: uid=uken07,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken07
+sn: uken07
+uidNumber: 10107
+gidNumber: 10107
+userPassword:
+loginShell: /bin/bash
+homeDirectory: /homes/uken07
+
+dn: cn=uken07,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10107
+memberUid: uken07
+
+dn: uid=uken08,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken08
+sn: uken08
+uidNumber: 10108
+gidNumber: 10108
+userPassword:
+loginShell: /bin/bash
+homeDirectory: /homes/uken08
+
+dn: cn=uken08,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10108
+memberUid: uken08
+
+dn: uid=uken09,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken09
+sn: uken09
+uidNumber: 10109
+gidNumber: 10109
+userPassword:
+loginShell: /bin/bash
+homeDirectory: /homes/uken09
+
+dn: cn=uken09,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10109
+memberUid: uken09
+
+dn: uid=uken10,ou=guest,ou=people,dc=uken,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: uken10
+sn: uken10
+uidNumber: 10110
+gidNumber: 10110
+userPassword:
+loginShell: /bin/bash
+homeDirectory: /homes/uken10
+
+dn: cn=uken10,ou=guest,ou=groups,dc=uken,dc=local
+objectClass: posixGroup
+gidNumber: 10110
+memberUid: uken10

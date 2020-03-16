@@ -1,0 +1,21 @@
+﻿dn: ou=sudoers,dc=uken,dc=local
+objectClass: organizationalUnit
+ou: sudoers
+
+dn: cn=default,ou=sudoers,dc=uken,dc=local
+objectClass: top
+objectClass: sudorole
+cn: default
+sudoOption: ignore_local_sudoers
+sudoUser: ALL					##全ユーザーに許可
+sudoCommand: /sbin/shutdown			##shutdownコマンド
+sudoHost: ALL					##全ホストに許可
+
+dn: cn=admin,ou=sudoers,dc=uken,dc=local
+objectClass: top
+objectClass: sudorole
+cn: admin
+sudoOption: ignore_local_sudoers
+sudoUser: %admin				##adminグループに所属するユーザーにのみ許可
+sudoCommand: ALL				##全コマンドを許可
+sudoHost: ALL					##全ホストに許可

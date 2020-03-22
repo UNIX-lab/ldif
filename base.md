@@ -5,7 +5,7 @@
 ### OpenLDAPサーバーを構築する
 Debianなら`slapd`,`ldap-utils`,`nscd`,`nslcd`をインストールする。
 ```
-sudo apt install slapd ldap-utils nscd nslcd
+sudo apt install slapd ldap-utils
 ```
 
 configureが走るので、設定する。

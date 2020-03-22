@@ -7,4 +7,4 @@ ldif files for openldap-based computer room linux system
 Open LDAP Server
 
 ## Usage
-See `man ldapadd` , `man ldapmodify` and so on.
+See `man ldapadd` , `man ldapdelete` , `man ldapmodify` and so on.

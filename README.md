@@ -4,11 +4,11 @@ PC Room Linux Maker
 ldif files for openldap-based computer room linux system
 
 ## Requirement
-Open LDAP Server
-NFS Server
+Open LDAP Server  
+NFS Server  
 
-Open LDAP Client
-NFS Client
+Open LDAP Client  
+NFS Client  
 
 autofs Daemon
 

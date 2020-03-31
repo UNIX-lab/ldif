@@ -15,4 +15,4 @@ autofs Daemon
 ## Usage
 See `man ldapadd` , `man ldapdelete` , `man ldapmodify` and so on.
 
-Visit https://komu.qrunch.io/entries/Zu395eQrSstkdjqC
+Visit https://komu.qrunch.io/archive/category/GroW72IffUmUH6zB/entries
